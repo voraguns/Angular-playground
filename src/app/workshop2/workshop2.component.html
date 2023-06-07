@@ -1,6 +1,5 @@
 <div class="box">
     <input type="text" [(ngModel)]="text"/>
-
     <p>{{text}}</p>
 </div>
 
@@ -15,11 +14,11 @@
 </div>
 
 <div class="box">
-    <div>
-        <app-text-show (newItemEvent)="adddNewItem($event)"></app-text-show>
+    <div >
+        <p>{{ value }}</p>
     </div>
     <div>
-        <p>{{ value }}</p>
+        <app-text-show (newItemEvent)="adddNewItem($event)"></app-text-show>
     </div>
 </div>
 
