@@ -1,42 +1,41 @@
 <div class="container">
     <div>
-      <form style="width: 250px">
+      <form style="width: 250px" [formGroup]="formMember">
         <div style="text-align: center">Member</div>
         <div class="form-control">
           <label> *Name:</label>
-          <input />
+          <input type="text" formControlName="name"/>
         </div>
   
         <div class="form-control">
           <label> *Email:</label>
-          <input />
+          <input type="text" formControlName="email"/>
         </div>
   
         <div class="form-control">
           <label> *Age:</label>
-          <input />
+          <input type="text" formControlName="age"/>
         </div>
   
         <div class="form-control">
           <label> *Tel:</label>
-          <input />
+          <input type="text" formControlName="tel"/>
         </div>
   
         <div class="form-control">
           <label> *Gender:</label>
-          <select>
+          <select formControlName="gender">
             <option>male</option>
             <option>female</option>
           </select>
         </div>
-        <button>Submit</button>
+        <button type="submit">Submit</button>
+        {{formMember.value | json}}
     </form>
 </div>
   
-    <div>
-  
-      <table>
-  
+<div>  
+    <table>  
         <thead>
   
           <tr>
