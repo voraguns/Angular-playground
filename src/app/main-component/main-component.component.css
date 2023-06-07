@@ -1,0 +1,16 @@
+.main-comp {
+    color: white;
+    background-color: blue;
+    padding: 10px;
+    height: 100vh;
+    display: flex;
+}
+
+.sub-comp {
+    display: flex;
+}
+
+.sub-child-comp1, .sub-child-comp2 {
+    width: 50%;
+    padding: 10px;
+}
