@@ -1,0 +1,11 @@
+div {
+    width: 200px;
+    height: 200px;
+    background-color: greenyellow;
+    text-align: center;    
+}
+
+.inbox {
+    padding-top: 30px;
+    text-align: center;
+}

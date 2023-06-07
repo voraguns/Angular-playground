@@ -1,0 +1,15 @@
+.box {
+    margin: 10px;
+    padding: 30px;
+    background-color: blue;
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+}
+
+p {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}

@@ -1,1 +1,25 @@
-<p>workshop2 works!</p>
+<div class="box">
+    <input type="text" [(ngModel)]="text"/>
+
+    <p>{{text}}</p>
+</div>
+
+<div class="box">
+    <div>
+        <input type="text" [(ngModel)]="text2"/>
+        <button type="submit" (click)="submit()">Submit</button>
+    </div>
+    <div>
+        <app-show-text [text]="textSubmit"></app-show-text>
+    </div>
+</div>
+
+<div class="box">
+    <div>
+        <app-text-show (newItemEvent)="adddNewItem($event)"></app-text-show>
+    </div>
+    <div>
+        <p>{{ value }}</p>
+    </div>
+</div>
+
