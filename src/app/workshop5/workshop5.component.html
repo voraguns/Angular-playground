@@ -29,9 +29,10 @@
             <option>female</option>
           </select>
         </div>
-        <button type="submit">Submit</button>
-        {{formMember.value | json}}
+        <button (click)="submit()">Submit</button>
+   
     </form>
+    {{formMember.value | json}}
 </div>
   
 <div>  
@@ -54,12 +55,12 @@
     </thead>
   
         <tbody>
-        <tr>
-            <td>opal</td>
-            <td>makara@gmail.com</td>
-            <td>0909796926</td>
-            <td>18</td>
-            <td>male</td>
+        <tr *ngFor="let item of listMember">
+            <td>{{ item.name }}</td>
+            <td>{{ item.email }}</td>
+            <td>{{ item.tel }}</td>
+            <td>{{ item.age }}</td>
+            <td>{{ item.gender }}</td>
         </tr>
         </tbody>
     </table> 

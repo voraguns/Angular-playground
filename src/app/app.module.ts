@@ -46,6 +46,6 @@ import { Workshop5Component } from './workshop5/workshop5.component';
     ReactiveFormsModule
   ],
   providers: [],
-  bootstrap: [AppComponent, FormsModule]
+  bootstrap: [AppComponent]
 })
 export class AppModule { }
